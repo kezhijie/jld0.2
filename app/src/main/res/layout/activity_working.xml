@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main_bg"
+    tools:context="com.sinpm.app.ui.ActivityWorking">
+
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layout_top"
+            layout="@layout/layout_top" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_test"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal|top"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/myEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="textNoSuggestions"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:singleLine="true"
+                android:text="1A 2B 0C 02 01 00 0A 00 00 01 3C 4D"
+                android:textSize="12sp"
+
+                />
+
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="80dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/bg_blue"
+                android:text="模拟接受"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_hide"
+                android:layout_width="60dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/bg_blue"
+                android:text="关闭"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="7.5dp"
+                        android:layout_height="7.5dp"
+                        android:src="@mipmap/dot_green"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请选择经穴头"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="233dp"
+                    android:layout_height="15dp"
+                    android:text="PLEASE SELECT THE ACUPOINT HEAD"
+                    android:textColor="#ffffffff"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="272dp"
+                android:layout_gravity="center|top">
+                >
+
+
+                <LinearLayout
+                    android:layout_width="353dp"
+                    android:layout_height="210dp"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center|top"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_model1"
+                        android:layout_width="174dp"
+                        android:layout_height="210dp"
+                        android:background="@mipmap/nljxt"
+                        android:clickable="true"
+                        android:gravity="center|top">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="140dp"
+                            android:text="能量经穴头"
+                            android:textColor="#ffffffff"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_model2"
+                        android:layout_width="174dp"
+                        android:layout_height="210dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@mipmap/rnjxt"
+                        android:clickable="true"
+                        android:gravity="center|top">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="140dp"
+                            android:text="热能经穴头"
+                            android:textColor="#ffffffff"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="83dp"
+                    android:layout_marginTop="200dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_quit"
+                        android:layout_width="170dp"
+                        android:layout_height="82.5dp"
+                        android:background="@mipmap/btn_yellow"
+                        android:button="@null"
+                        android:paddingBottom="20dp"
+                        android:text="退 出"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"></Button>
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_work_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <!--左边-->
+            <LinearLayout
+                android:layout_width="307dp"
+                android:layout_height="321dp"
+                android:gravity="center|top"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="208dp"
+                    android:layout_height="208dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/img_work"
+                        android:layout_width="208dp"
+                        android:layout_height="208dp"
+                        android:src="@mipmap/logo1"></ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    >
+
+
+                    <ImageView
+                        android:layout_width="7.5dp"
+                        android:layout_height="7.5dp"
+                        android:src="@mipmap/dot_green"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="可用时长"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="AVAILABLE\nDURATION"
+                        android:textColor="#ffffffff"
+                        android:textSize="8sp" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    >
+
+                    <TextView
+                        android:fontFamily="@font/font_time"
+                        android:id="@+id/txt_time1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.5dp"
+                        android:background="#492D34"
+                        android:letterSpacing="0.4"
+                        android:padding="2dp"
+                        android:text="2"
+                        android:textColor="#fffdd000"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:fontFamily="@font/font_time"
+                        android:id="@+id/txt_time2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.5dp"
+                        android:background="#492D34"
+                        android:letterSpacing="0.4"
+                        android:padding="2dp"
+                        android:text="2"
+                        android:textColor="#fffdd000"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:fontFamily="@font/font_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.5dp"
+                        android:letterSpacing="0.4"
+                        android:padding="2dp"
+                        android:text=":"
+                        android:textColor="#fffdd000"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:fontFamily="@font/font_time"
+                        android:id="@+id/txt_time3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.5dp"
+                        android:background="#492D34"
+                        android:letterSpacing="0.4"
+                        android:padding="2dp"
+                        android:text="3"
+                        android:textColor="#fffdd000"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:fontFamily="@font/font_time"
+                        android:id="@+id/txt_time4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.5dp"
+                        android:background="#492D34"
+                        android:letterSpacing="0.4"
+                        android:padding="2dp"
+                        android:text="3"
+                        android:textColor="#fffdd000"
+                        android:textSize="35sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="223dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="22dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    >
+
+                    <ImageView
+                        android:layout_width="7.5dp"
+                        android:layout_height="7.5dp"
+                        android:src="@mipmap/dot_green"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="模式"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="MODE"
+                        android:textColor="#ffffffff"
+                        android:textSize="8sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+
+                <RadioButton
+                    android:id="@+id/ck_zhixian"
+                    android:layout_width="132dp"
+                    android:layout_height="36.5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ck_red"
+                    android:button="@null"
+                    android:fontFamily="@font/font1"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="直线波"
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/ck_zhengxian"
+                    android:fontFamily="@font/font1"
+                    android:layout_width="132dp"
+                    android:layout_height="36.5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ck_red"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="正弦波"
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp">
+
+                </RadioButton>
+
+                </RadioGroup>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    >
+
+                    <ImageView
+                        android:layout_width="7.5dp"
+                        android:layout_height="7.5dp"
+                        android:src="@mipmap/dot_green"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="强度"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="STRENGTH"
+                        android:textColor="#ffffffff"
+                        android:textSize="8sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    >
+
+                    <ImageView
+                        android:id="@+id/img_minus_st"
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:src="@mipmap/btn_minus"></ImageView>
+
+                    <TextView
+                        android:id="@+id/txt_st"
+                        android:minWidth="32sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:background="#492D34"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="0"
+                        android:textColor="#ffffffff"
+                        android:textSize="23sp" />
+
+                    <ImageView
+                        android:id="@+id/img_add_st"
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@mipmap/btn_add"></ImageView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_tmp_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    >
+
+                    <ImageView
+                        android:layout_width="7.5dp"
+                        android:layout_height="7.5dp"
+                        android:src="@mipmap/dot_green"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="温度"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="TEMPERATURE"
+                        android:textColor="#ffffffff"
+                        android:textSize="8sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/ll_tmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    >
+
+                    <ImageView
+                        android:id="@+id/img_minus_tmp"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:src="@mipmap/btn_minus"></ImageView>
+
+                    <TextView
+                        android:id="@+id/txt_tmp"
+                        android:layout_marginTop="5dp"
+                        android:minWidth="32sp"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:background="#492D34"
+                        android:padding="2dp"
+                        android:text="0"
+                        android:textColor="#ffffffff"
+                        android:textSize="23sp" />
+
+                    <TextView
+                        android:id="@+id/textViewDegree"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:layout_marginTop="-5dp"
+                        android:text="°C"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/img_add_tmp"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@mipmap/btn_add"></ImageView>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_start"
+                    android:layout_width="132dp"
+                    android:layout_height="62.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/btn_yellow"
+                    android:button="@null"
+                    android:paddingBottom="20dp"
+                    android:text="开 始"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"></Button>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

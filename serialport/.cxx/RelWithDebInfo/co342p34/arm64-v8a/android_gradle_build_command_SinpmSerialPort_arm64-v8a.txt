@@ -1,0 +1,7 @@
+Executable : E:\sdk\cmake\3.18.1\bin\ninja.exe
+arguments : 
+-C
+D:\asPro\jld-main\serialport\.cxx\RelWithDebInfo\co342p34\arm64-v8a
+SinpmSerialPort
+jvmArgs : 
+

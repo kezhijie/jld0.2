@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@mipmap/main_bg"
+    tools:context="com.sinpm.app.ui.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layout_top"
+            layout="@layout/layout_top" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="512dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:id="@+id/ll_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/check_net"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_refresh"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/ic_erro_defalut"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/img_refresh"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_erro_defalut" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:id="@+id/ll_Active"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|top"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="230dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="52dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="7.5dp"
+                                android:layout_height="7.5dp"
+                                android:src="@mipmap/dot_green"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5.5dp"
+
+
+                                android:text="地址:新北市汐止區大同路一段185號8樓"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp"
+
+                                />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="7.5dp"
+                                android:layout_height="7.5dp"
+                                android:src="@mipmap/dot_green"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5.5dp"
+
+
+                                android:text="電話:+886-2-8691-6959"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp"
+
+                                />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="7.5dp"
+                                android:layout_height="7.5dp"
+                                android:src="@mipmap/dot_green"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5.5dp"
+
+
+                                android:text="傳真:+886-2-2649-9971"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp"
+
+                                />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="7.5dp"
+                                android:layout_height="7.5dp"
+                                android:src="@mipmap/dot_green"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5.5dp"
+
+
+                                android:text="網址:www.bioware.com.tw"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp"
+
+                                />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="7.5dp"
+                                android:layout_height="7.5dp"
+                                android:src="@mipmap/dot_green"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5.5dp"
+
+
+                                android:text="信箱:company@bioware.com.tw"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp"
+
+                                />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:background="#E9F2FF"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="136dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center|top"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="98dp"
+                            android:layout_height="98dp"
+                            android:background="@drawable/qr_bg"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/qr"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_erro_defalut" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="设备激活"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="45dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.5dp"
+                            android:text="【步驟一】"
+                            android:textColor="#FB6C39"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.5dp"
+
+
+                            android:text="在微信首打开扫一扫"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.5dp"
+
+
+                            android:layout_marginTop="5dp"
+                            android:text="【步骤二】"
+                            android:textColor="#FB6C39"
+                            android:textSize="12sp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.5dp"
+
+                            android:layout_marginTop="5dp"
+                            android:text="扫描右上方二维码，根据提示进行启动"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_customer"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center|top"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="296dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:gravity="center_vertical"
+
+                            android:orientation="horizontal"
+                            android:paddingLeft="47dp">
+
+                            <ImageView
+                                android:layout_width="7.5dp"
+                                android:layout_height="7.5dp"
+                                android:src="@mipmap/dot_green"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="【步驟一】"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="STEP ONE"
+                                android:textColor="#ffffffff"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="210dp"
+                            android:layout_height="32dp"
+                            android:background="@mipmap/step_one_bg"
+
+                            android:gravity="right|center_vertical"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end|center_vertical"
+                                android:paddingRight="13dp"
+                                android:text="在微信首頁打开扫一扫"
+                                android:textColor="#FFFFFF"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:gravity="center_vertical"
+
+                            android:orientation="horizontal"
+                            android:paddingLeft="47dp">
+
+                            <ImageView
+                                android:layout_width="7.5dp"
+                                android:layout_height="7.5dp"
+                                android:src="@mipmap/dot_green"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="【步驟二】"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="STEP TWO"
+                                android:textColor="#ffffffff"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="296.5dp"
+                            android:layout_height="32dp"
+                            android:background="@mipmap/step_one_bg"
+
+                            android:gravity="right|center_vertical"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end|center_vertical"
+                                android:paddingRight="13dp"
+                                android:text="扫描右侧二维码，根据提示进行登录"
+                                android:textColor="#FFFFFF"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+<!--                    <View-->
+<!--                        android:layout_width="1dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:background="#E9F2FF" />-->
+
+                    <LinearLayout
+                        android:layout_width="137dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center|top"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="98dp"
+                            android:layout_height="98dp"
+                            android:background="@drawable/qr_bg"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/qr_customer"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_erro_defalut" />
+
+                        </RelativeLayout>
+
+
+                        <Button
+                            android:id="@+id/noUserLogin"
+                            android:layout_width="70dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/btn_blue"
+                            android:button="@null"
+                            android:text="@string/no_login"
+                            android:textColor="@color/white"
+                            android:textSize="8sp"
+                            android:visibility="visible">
+
+
+                        </Button>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp">
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_lock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|top"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="190dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+
+                        android:orientation="vertical"
+                        android:paddingLeft="54dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="設備已鎖定"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="請聯系品牌商負責人"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="137dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center|top"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="98dp"
+                            android:layout_height="98dp"
+                            android:background="@drawable/qr_bg"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/qr_lock" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp">
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

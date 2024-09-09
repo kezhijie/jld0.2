@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@mipmap/bg_single_check"/>
+    <item android:state_checked="false"  android:drawable="@mipmap/bg_single"/>
+
+    <!-- 默认状态，如果没有指定其他状态，则使用这个 -->
+    <item android:drawable="@mipmap/bg_single" />
+</selector>

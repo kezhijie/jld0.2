@@ -1,0 +1,7 @@
+Executable : E:\sdk\cmake\3.18.1\bin\ninja.exe
+arguments : 
+-C
+D:\asPro\jld-main\serialport\.cxx\Debug\162ve313\x86_64
+SinpmSerialPort
+jvmArgs : 
+

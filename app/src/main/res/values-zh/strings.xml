@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">健俪道</string>
+    <string name="machineId">设备ID</string>
+    <string name="sys_wifi">网络已断开，请检查网络是否正常</string>
+    <string name="device_active">设备激活</string>
+    <string name="ready">启动</string>
+    <string name="brightness">亮度</string>
+    <string name="language">语言</string>
+    <string name="en">英文</string>
+    <string name="zh">中文</string>
+    <string name="tip">提示</string>
+    <string name="check_version">当前已是最新版本</string>
+    <string name="current_version">当前版本</string>
+    <string name="update">升级   </string>
+    <string name="net">网络质量 </string>
+    <string name="check">检测 </string>
+    <string name="msg_confirm">确定</string>
+    <string name="enter">进入程序</string>
+    <string name="msg_cancel">取消</string>
+    <string name="msg_connect">连接</string>
+    <string name="msg_connecting">正在连接</string>
+    <string name="customer_login">顾客扫码登录</string>
+    <string name="no_login">游客登录</string>
+    <string name="stage1">阶段一</string>
+    <string name="stage2">阶段二</string>
+    <string name="stage3">阶段三</string>
+    <string name="stage4">阶段四</string>
+    <string name="stage5">阶段五</string>
+
+    <string name="time">    时间:</string>
+    <string name="energy">    能量:</string>
+
+    <string name="time_new">时间</string>
+    <string name="energy_new">能量</string>
+
+    <string name="current_time_out">当前使用时间使用完毕，请重新解锁</string>
+    <string name="manual_operate">当前已经为手动模式</string>
+    <string name="start_msg_tip">请点击暂停后继续当前操作</string>
+
+    <string name="auto_operate">当前已经为自动模式</string>
+
+    <string name="jinzhi_msg_tip">紧致护理目前只支持手动模式</string>
+
+    <string name="skin_operate">当前已经为美肤模式</string>
+    <string name="skin_operate_out">美肤时间已经用完</string>
+    <string name="jinzhi_operate">当前已经为紧致模式</string>
+    <string name="jinzhi_operate_out">紧致时间已经用完</string>
+    <string name="level_limit">不能超过10档</string>
+    <string name="level_min">档位最低为1档</string>
+
+    <string name="exit_msg">正在退出，请稍后</string>
+    <string name="dikou">立即抵扣</string>
+
+
+    <string name="amount_pay">余额抵扣</string>
+    <string name="change">切换语言重启后生效，是否重启?</string>
+
+    <string name="complete">美肤已完成，是否开启紧致模式？</string>
+
+
+    <string name="close">退出后剩余时间不可用，是否退出？</string>
+    <string name="lock">冻结中</string>
+
+    <string name="check_net">请检查网络</string>
+
+    <string name="product_unlock">扫描设备码与产品码进行解锁</string>
+
+    <string name="scann_pay">扫码支付:￥</string>
+
+    <string name="loading_text">加载中</string>
+
+    <string name="input_pwd">请输入“%s”的密码</string>
+    <string name="msg_reconnect">重新连接</string>
+    <string name="msg_not_save">取消保存</string>
+    <string name="msg_saved">已保存</string>
+</resources>

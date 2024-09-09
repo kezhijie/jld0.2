@@ -1,0 +1,23 @@
+                    Executable : E:\sdk\cmake\3.18.1\bin\cmake.exe
+arguments : 
+-HD:\asPro\jld-main\serialport\src\main\jni
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=16
+-DANDROID_PLATFORM=android-16
+-DANDROID_ABI=x86_64
+-DCMAKE_ANDROID_ARCH_ABI=x86_64
+-DANDROID_NDK=E:\sdk\ndk\21.4.7075529
+-DCMAKE_ANDROID_NDK=E:\sdk\ndk\21.4.7075529
+-DCMAKE_TOOLCHAIN_FILE=E:\sdk\ndk\21.4.7075529\build\cmake\android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=E:\sdk\cmake\3.18.1\bin\ninja.exe
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=D:\asPro\jld-main\serialport\build\intermediates\cxx\RelWithDebInfo\co342p34\obj\x86_64
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=D:\asPro\jld-main\serialport\build\intermediates\cxx\RelWithDebInfo\co342p34\obj\x86_64
+-DCMAKE_BUILD_TYPE=RelWithDebInfo
+-BD:\asPro\jld-main\serialport\.cxx\RelWithDebInfo\co342p34\x86_64
+-GNinja
+jvmArgs : 
+
+
+                    Build command args: []
+                    Version: 2

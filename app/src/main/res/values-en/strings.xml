@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">健俪道</string>
+    <string name="machineId">DeviceID</string>
+    <string name="sys_wifi">The network is disconnected, please check if the network is normal</string>
+    <string name="device_active">Device Activation</string>
+    <string name="ready">Start</string>
+    <string name="brightness">Brightness</string>
+    <string name="language">Language</string>
+    <string name="en">EN</string>
+    <string name="zh">CH</string>
+    <string name="tip">Tip</string>
+    <string name="check_version">Current version is up to date</string>
+    <string name="current_version">Version</string>
+    <string name="update">Update</string>
+    <string name="net">Network</string>
+    <string name="check">Check</string>
+    <string name="msg_confirm">Confirm</string>
+    <string name="enter">Enter</string>
+    <string name="msg_cancel">Cancel</string>
+    <string name="msg_connect">Connect</string>
+    <string name="msg_connecting">Connecting</string>
+    <string name="customer_login">Customer QR Login</string>
+    <string name="no_login">Guest Login</string>
+    <string name="stage1">Stage 1</string>
+    <string name="stage2">Stage 2</string>
+    <string name="stage3">Stage 3</string>
+    <string name="stage4">Stage 4</string>
+    <string name="stage5">Stage 5</string>
+    <string name="time">   TIME:</string>
+    <string name="energy">  POWER:</string>
+    <string name="time_new">TIME</string>
+    <string name="energy_new">POWER</string>
+
+    <string name="current_time_out">The current usage time is up, please unlock again</string>
+    <string name="manual_operate">Currently in manual mode</string>
+    <string name="start_msg_tip">Please click pause to continue current operation</string>
+
+    <string name="auto_operate">Currently in automatic mode</string>
+    <string name="jinzhi_msg_tip">Firm care is currently only supported in manual mode</string>
+    <string name="skin_operate">Currently in import care mode</string>
+    <string name="skin_operate_out">Skin care time has been used up</string>
+    <string name="jinzhi_operate">Currently in firm mode</string>
+    <string name="jinzhi_operate_out">Firm time has been used up</string>
+    <string name="level_limit">Cannot exceed level 10</string>
+    <string name="level_min">The minimum level is level 1</string>
+    <string name="exit_msg">Exiting, please wait</string>
+
+    <string name="dikou">Deduction</string>
+
+
+    <string name="amount_pay">Amount pay</string>
+
+    <string name="change">Switch language, effective after restart, need to restart?</string>
+    <string name="complete">IMPORT completed, start FIRM mode?</string>
+
+    <string name="close">After exiting, the remaining time is unavailable. Do you want to exit？</string>
+
+    <string name="lock">Freezing</string>
+
+    <string name="check_net">Please check the network</string>
+    <string name="product_unlock">Scan the device code and product code for unlocking</string>
+    <string name="scann_pay">WeChat Scan to Pay:$</string>
+    <string name="loading_text">loading</string>
+
+    <string name="input_pwd">please enter “%s” password</string>
+
+    <string name="msg_reconnect">Reconnect</string>
+    <string name="msg_not_save">Cancel Save</string>
+    <string name="msg_saved">saved</string>
+
+</resources>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_main"
+    tools:context="com.sinpm.app.ui.ActivitySetting">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal|top
+"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layout_top"
+            layout="@layout/layout_top" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="227dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="37dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="37dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+
+                >
+
+                <ImageView
+                    android:layout_width="7.5dp"
+                    android:layout_height="7.5dp"
+                    android:src="@mipmap/dot_green"></ImageView>
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="15dp"
+                    android:text="亮度"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <SeekBar
+
+                    android:id="@+id/sekb"
+                    android:layout_width="200dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="7.5dp"
+                    android:layout_height="7.5dp"
+                    android:src="@mipmap/dot_green"></ImageView>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="设备号"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/ll_light"
+                    android:gravity="center_horizontal|center_vertical">
+
+                    <TextView
+
+                        android:id="@+id/idTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="0000"
+                        android:textColor="#FFFFFF"
+                        android:textIsSelectable="true"
+                        android:textSize="13sp"></TextView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="7.5dp"
+                    android:layout_height="7.5dp"
+                    android:src="@mipmap/dot_green"></ImageView>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+
+                    android:text="语言"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:gravity="center_vertical"
+
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/btn_zh"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="@drawable/btn_english"
+                        android:button="@null"
+                        android:checked="true"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp">
+
+                    </RadioButton>
+
+                    <TextView
+                        android:id="@+id/txt_zh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:text="中文"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+
+
+                    <RadioButton
+
+                        android:id="@+id/btn_en"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/btn_english"
+                        android:button="@null"
+
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp">
+
+                    </RadioButton>
+
+                    <TextView
+
+                        android:id="@+id/txt_en"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:text="英文"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="15dp"
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="7.5dp"
+                    android:layout_height="7.5dp"
+                    android:src="@mipmap/dot_green"></ImageView>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+
+                    android:text="当前版本"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/version_tv"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:gravity="center_horizontal|left
+"
+                    android:text="V1.802"
+
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/update_ll"
+
+                    android:layout_width="74dp"
+                    android:layout_height="25dp"
+                    android:background="@mipmap/bg_update"
+
+                    android:gravity="center_vertical"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"></Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="7.5dp"
+                    android:layout_height="7.5dp"
+                    android:src="@mipmap/dot_green"></ImageView>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+
+                    android:text="网络状态"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txt_net"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:gravity="center_horizontal|left"
+                    android:text="V1.802"
+
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/rsdevice_ll"
+
+                    android:layout_width="74dp"
+                    android:layout_height="25dp"
+                    android:background="@mipmap/bg_check"
+
+                    android:gravity="center_vertical"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"></Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

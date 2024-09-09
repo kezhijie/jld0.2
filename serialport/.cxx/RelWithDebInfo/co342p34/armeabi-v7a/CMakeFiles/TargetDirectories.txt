@@ -1,0 +1,3 @@
+D:/asPro/jld-main/serialport/.cxx/RelWithDebInfo/co342p34/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+D:/asPro/jld-main/serialport/.cxx/RelWithDebInfo/co342p34/armeabi-v7a/CMakeFiles/SinpmSerialPort.dir
+D:/asPro/jld-main/serialport/.cxx/RelWithDebInfo/co342p34/armeabi-v7a/CMakeFiles/edit_cache.dir

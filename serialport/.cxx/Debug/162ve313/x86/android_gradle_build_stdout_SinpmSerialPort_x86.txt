@@ -1,0 +1,2 @@
+ninja: Entering directory `D:\asPro\jld-main\serialport\.cxx\Debug\162ve313\x86'
+ninja: no work to do.
